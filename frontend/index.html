@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8" />
+  <title>Menstruaaltsükli Kalender</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌸 Menstruaaltsükli Kalender</h1>
+
+    <div class="card">
+      <label>Viimase menstruatsiooni algus:</label>
+      <input type="date" id="last_start" />
+
+      <label>Menstruatsiooni kestus (päevades):</label>
+      <input type="number" id="period_length" placeholder="nt 5" />
+
+      <button onclick="calculate()">Arvuta järgmine algus</button>
+
+      <div id="result" class="result"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
